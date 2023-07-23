@@ -51,7 +51,7 @@ def main():
         # Get the answer from the chain
         start = time.time()
         res = qa(query)
-        answer, docs = res['result'], [] if args.hide_source else res['source_documents']
+        answer, docs = res['result'], [] if args.hide_source else res['documents']
         end = time.time()
 
         # Print the result

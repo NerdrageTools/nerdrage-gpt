@@ -1,6 +1,6 @@
 ---
 files: ^(.*\.(py|json|md|sh|yaml|cfg|txt))$
-exclude: ^(\.[^/]*cache/.*|.*/_user.py|source_documents/)$
+exclude: ^(\.[^/]*cache/.*|.*/_user.py|documents/)$
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -31,7 +31,7 @@ repos:
         args:
           - --no-warnings
           - -d
-          - '{extends: relaxed, rules: {line-length: {max: 90}}}'
+          - "{extends: relaxed, rules: {line-length: {max: 90}}}"
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.2
     hooks:
